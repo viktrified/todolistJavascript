@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>TO-DO LIST</h1>
+    <table>
+      <caption>
+        TO-DO LIST
+      </caption>
+      <thead>
+        <tr>
+          <th>NO.</th>
+          <th scope="col"><abbr title="Quantity">Activities</abbr></th>
+        </tr>
+      </thead>
+      <tbody id="activity-list">
+        <tr>
+          <th scope="row" rowspan="3" id="number">1</th>
+          <td>
+            <form action="">
+              <input
+                type="text"
+                placeholder="add your task here..."
+                id="activity"
+              />
+              <input type="checkbox" name="" value="" id="completed" />
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <script src="index.js"></script>
   </body>
 </html>
