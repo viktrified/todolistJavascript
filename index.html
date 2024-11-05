@@ -3,37 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TO-DO LIST</title>
+    <title>To-Do List</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>TO-DO LIST</h1>
-    <table>
-      <caption>
-        TO-DO LIST
-      </caption>
+    <h3>To-Do List</h3>
+    <table id="todoTable">
       <thead>
         <tr>
-          <th>NO.</th>
-          <th scope="col"><abbr title="Quantity">Activities</abbr></th>
+          <th>No</th>
+          <th>Activities</th>
+          <th>Status</th>
+          <th>Delete</th>
         </tr>
       </thead>
-      <tbody id="activity-list">
-        <tr>
-          <th scope="row" rowspan="3" id="number">1</th>
-          <td>
-            <form action="">
-              <input
-                type="text"
-                placeholder="add your task here..."
-                id="activity"
-              />
-              <input type="checkbox" name="" value="" id="completed" />
-            </form>
-          </td>
-        </tr>
-      </tbody>
+      <tbody></tbody>
     </table>
+    <button onclick="addTask()">Add Task</button>
     <script src="index.js"></script>
   </body>
 </html>
